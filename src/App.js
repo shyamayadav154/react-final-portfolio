@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss'
+import About from './components/about/about.compoent.jsx'
+import Footer from './components/footer/footer.component.jsx'
+import Hero from './components/hero/hero.component.jsx'
+import Navbar from './components/navbar/navbar.component.jsx'
+import Projects from './components/projects/project.component.jsx'
+import { useRef,useEffect } from 'react'
+
+import LocomotiveScroll from 'locomotive-scroll'
+import '../node_modules/locomotive-scroll/src/locomotive-scroll.scss'
+
 
 function App() {
+  const ref = useRef(null)
+
+useEffect(() => {
+  if(ref){
+    new LocomotiveScroll({
+      el: ref.current,
+      smooth: true,
+      multiplier: 1,
+
+     smoothClass:"has-scroll-smooth",
+     scrollingClass:"has-scroll-scrolling"
+     
+    })
+  }
+
+
+}, [])
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <div data-scroll-container ref={ref} >
+      <Navbar />
+        <Hero/>
+        <About  />
+        <Projects  />
+      <Footer />
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App
