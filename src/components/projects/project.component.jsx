@@ -1,24 +1,18 @@
 import React,{useEffect} from 'react'
-import { useLocomotiveScroll } from 'react-locomotive-scroll'
+
 import './project.styes.scss'
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+
 import { projectData } from '../../data/data'
 import SingleProject from './singleProject.component.jsx'
 
 
 const Projects = () => {
    
-  // useEffect(() => {
-    
-  //   Aos.init({duration:1000})
-  
-  // }, [])
-  
+
 
   return (
     <section id='project' data-scroll-section className='projects'>
-      <div data-scroll data-scroll-speed={-2} className='watermark'>
+      <div data-scroll data-scroll-speed={-1} className='watermark'>
         projects
       </div>
 
@@ -31,7 +25,7 @@ const Projects = () => {
         </p>
       </div>
 
-      <div data-scroll data-scroll-speed={1} className='tail'>
+      <div data-scroll data-scroll-speed={1.5} className='tail'>
         {projectData.map((project) => {
           return <SingleProject key={project.id} project={project} />
         })}

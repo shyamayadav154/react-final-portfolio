@@ -1,6 +1,7 @@
 @import '../breakpoints/breakpoints';
 
 nav {
+  backdrop-filter: blur(2px);
   @media only screen and (max-width: 768px) {
     width: 100vw;
   }
@@ -10,13 +11,19 @@ nav {
   width: 100%;
   font-size: 1.25rem;
   z-index: 9999;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.8);
 
   font-weight: 500;
   .brand {
     cursor: pointer;
+    font-size: 1.75rem;
+    font-smooth: always;
+    color: #991b1b;
+     text-decoration: none;
+      
   }
   .nav-container {
+    padding: 1rem 0;
     width: 85vw;
     @media only screen and (max-width: 768px) {
       width: 100%;
@@ -27,17 +34,17 @@ nav {
     align-items: center;
     justify-content: space-between;
 
-    .brand {
-      text-decoration: none;
-      color: black;
-    }
+  
     .links {
       ul {
+        @media only screen and (min-width: 768px) {
+          display: none;
+        }
         display: flex;
         list-style-type: none;
 
         li {
-            margin: 8px;
+          margin: 8px;
           a {
             @media only screen and (max-width: 768px) {
               margin: 5px;
@@ -49,6 +56,9 @@ nav {
             text-decoration: none;
             color: black;
             &:hover {
+              @media only screen and (max-width: 768px) {
+                border-bottom: revert;
+              }
               border-bottom: 2px solid #991b1b;
               cursor: pointer;
             }
