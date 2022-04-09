@@ -32,20 +32,18 @@ window.addEventListener("scroll",handleScroll)
   const { info, desc, skills } = aboutData[0]
 
   return (
-    <section data-scroll-section className='about'>
+    <section className='about'>
       <div
-        //  style={{ transform: `translateX(${offsetY * 0.2}px)` }}
-        data-Scroll
-        data-scroll-speed={-1}
+       
+        
         className='watermark'
       >
         about
       </div>
 
       <div
-        // style={{ transform: `translateY(-${offsetY * 0.1}px)` }}
-        data-scroll
-        data-scroll-speed={1}
+       
+        
         className='head'
       >
         <h2>about</h2>
@@ -53,9 +51,7 @@ window.addEventListener("scroll",handleScroll)
       </div>
 
       <div
-        // style={{ transform: `translateY(-${offsetY * 0.4 - 220}px)` }}
-        data-scroll
-        data-scroll-speed={1.5}
+        
         className='tail'
       >
         <div className='left'>

@@ -7,7 +7,7 @@ let ScrollLink = Scroll.Link
 const Navbar = () => {
  
   return (
-    <nav data-scroll-section>
+    <nav >
       <div className='nav-container'>
         <div>
           <a href='./' className='brand'>

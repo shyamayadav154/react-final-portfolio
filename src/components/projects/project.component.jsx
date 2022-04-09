@@ -11,12 +11,12 @@ const Projects = () => {
 
 
   return (
-    <section id='project' data-scroll-section className='projects'>
-      <div data-scroll data-scroll-speed={-1} className='watermark'>
+    <section id='project'  className='projects'>
+      <div  className='watermark'>
         projects
       </div>
 
-      <div data-scroll data-scroll-speed={1} className='head'>
+      <div  className='head'>
         <h2>projects</h2>
 
         <p>
@@ -25,7 +25,7 @@ const Projects = () => {
         </p>
       </div>
 
-      <div data-scroll data-scroll-speed={1.5} className='tail'>
+      <div  className='tail'>
         {projectData.map((project) => {
           return <SingleProject key={project.id} project={project} />
         })}

@@ -9,7 +9,9 @@ const Hero = () => {
   const controlNavbar = () => {
     if(window.scrollY>100){
       setShow(false)
-      console.log(show);
+      
+    }else{
+      setShow(true)
     }
   }
 
@@ -22,8 +24,8 @@ useEffect(() => {
 }, [])
 
   return (
-    <section data-scroll-section  id='home' className='hero'>
-      <div className='left'>
+    <section   id='home' className='hero'>
+      <div  className='left'>
        
           <h1>Hi, my name is Shyamanand.</h1>
           <h1>
@@ -49,10 +51,10 @@ useEffect(() => {
           </button>
         </div>
       </div>
-      <div className='right'>
+      <div  className='right'>
         <img src={webDevIcon} alt='web dev' className='icon' />
       </div>
-      <div className='scroll' >SCROLL DOWN &#8595;</div>
+      <div className='scroll' style={{display: show?"block":'none'}} >SCROLL DOWN &#8595;</div>
     </section>
   )
 }

@@ -14,7 +14,7 @@ const FormStyle = styled.form`
     width: 100%;
     font-size: 1.25rem;
     padding: 0.8rem;
-    color: #b2b5b8;
+    color: #36383A;
     background-color: #eeeeee;
     outline: none;
     border: none;

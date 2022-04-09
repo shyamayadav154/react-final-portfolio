@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import Aos from 'aos'
 import './singleProject.styles.scss'
+import {AiFillCaretRight} from 'react-icons/ai'
 
 const SingleProject = ({ project }) => {
   const { img, title, desc, features, techStacks, url, repo } = project
@@ -19,7 +20,7 @@ const SingleProject = ({ project }) => {
         <ul>
           {features.map((feature) => {
             const { id, name } = feature
-            return <li key={id}>{name}</li>
+            return <li key={id}><AiFillCaretRight/> {name}</li>
           })}
         </ul>
         <div className='tech'>
@@ -33,8 +34,8 @@ const SingleProject = ({ project }) => {
           })}
         </div>
         <div className='links'>
-          <a href={url}>Live Demo &#62; </a>
-          <a href={repo}>GitHub &#62;</a>
+          <a target='_blank' href={url}>Live Demo &#62; </a>
+          <a target='_blank' href={repo}>GitHub &#62;</a>
         </div>
       </div>
     </article>

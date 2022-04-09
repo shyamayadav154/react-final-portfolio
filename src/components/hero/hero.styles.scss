@@ -35,6 +35,7 @@
     }
 
     .left {
+      z-index: 999;
       .btn-container{
         display: flex;
         width: 100%;
@@ -104,8 +105,15 @@
   }
 
   .right {
+     background-color: #fcf8f8;
+     padding: 1rem;
+     border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     .icon {
       width: 400px;
+     
+     
+      
     }
   }
 

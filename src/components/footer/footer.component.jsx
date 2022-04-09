@@ -5,7 +5,7 @@ let scroll = Scroll.animateScroll
 
 const Footer = () => {
   return (
-    <footer data-scroll-section>
+    <footer >
       <div className='copyright'>
         <p>Copyright &#169; Shyamanand Yadav </p>
       </div>

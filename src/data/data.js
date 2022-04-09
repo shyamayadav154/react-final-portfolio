@@ -1,63 +1,80 @@
+
+import img1 from '../assets/watchlist.com.jpg'
+import img2 from '../assets/comfystore.jpg'
+import img3 from '../assets/crypto hunter.jpg'
+
 export const projectData = [
+  {
+    id: 2,
+    title: 'Comfy Store',
+    desc: 'An e-commerce website for furniture. It demonstrates features such as a shopping cart, payment, and delivery.',
+    features: [
+      { id: 1, name: 'Attractive UI/UX' },
+      { id: 2, name: 'Search,Sort & Filter Product Functionality' },
+      { id: 3, name: 'Add To Cart Functionality' },
+    ],
+    techStacks: [
+      { id: 1, name: 'React' },
+      { id: 2, name: 'Redux' },
+      { id: 3, name: 'SASS' },
+      { id: 4, name: 'API' },
+      { id: 5, name: 'Styled-Components' },
+    ],
+    img: img2,
+    url: 'https://comfy-store-v1.netlify.app/',
+    repo: 'https://github.com/shyamayadav154/comfy-store',
+  },
+  {
+    id: 3,
+    title: 'Crypto Hunter',
+    desc: 'This project is made to track cryptocurrency prices, and add cryptocurrencies to your watchlist to track the price of  particular cryptocurrency',
+    features: [
+      { id: 1, name: 'Realtime Cryptocurrency Price tracking' },
+      {
+        id: 2,
+        name: 'Chart view for better understanding of cryptocurrency over the time',
+      },
+      {
+        id: 3,
+        name: 'Authentication and Adding crypto coin to your watchlist',
+      },
+    ],
+    techStacks: [
+      { id: 1, name: 'React' },
+      { id: 2, name: 'Redux Toolkit' },
+      { id: 3, name: 'SASS' },
+      { id: 4, name: 'AXIOS' },
+      { id: 5, name: 'Material UI' },
+      { id: 6, name: 'ChartJS' },
+      { id: 7, name: 'Firebase' },
+    ],
+    img: img3,
+    url: 'https://crypto-hunter-v1.netlify.app/',
+    repo: 'https://github.com/shyamayadav154/cyrpto-hunter',
+  },
   {
     id: 1,
     title: 'WatchList.com',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non, aliquam sunt, illo error officia esse distinctio id at, in a ut magnam? Necessitatibus inventore velit, atque similique natus voluptatum.',
+    desc: 'An entertainment website,  to help you make your movies & series list to watch in the future and the list of movies you have viewed in past.',
     features: [
-      { id: 1, name: 'feature one' },
-      { id: 2, name: 'feature two' },
-      { id: 3, name: 'feature three' },
+      { id: 1, name: 'Trending Movies & Series list' },
+      { id: 2, name: 'Search And Add Movies to your list' },
+      {
+        id: 3,
+        name: 'See Movie Details (e.g: Trailer,Description,Rating,Casts',
+      },
     ],
     techStacks: [
       { id: 1, name: 'React' },
-      { id: 2, name: 'Redux' },
-      { id: 3, name: 'SASS' },
-      { id: 4, name: 'API' },
-      { id: 5, name: 'Context' },
+      { id: 2, name: 'Context' },
+      { id: 3, name: 'Local Storage' },
+      { id: 4, name: 'CSS' },
+      { id: 5, name: 'API' },
+      { id: 6, name: 'Framer Motion' },
     ],
-    img: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80',
-    url: 'google.com',
-    repo: 'google.com',
-  },
-  {
-    id: 2,
-    title: 'MyStore',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non, aliquam sunt, illo error officia esse distinctio id at, in a ut magnam? Necessitatibus inventore velit, atque similique natus voluptatum.',
-    features: [
-      { id: 1, name: 'feature one' },
-      { id: 2, name: 'feature two' },
-      { id: 3, name: 'feature three' },
-    ],
-    techStacks: [
-      { id: 1, name: 'React' },
-      { id: 2, name: 'Redux' },
-      { id: 3, name: 'SASS' },
-      { id: 4, name: 'API' },
-      { id: 5, name: 'Context' },
-    ],
-    img: 'https://images.unsplash.com/photo-1592503254549-d83d24a4dfab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80',
-    url: 'google.com',
-    repo: 'google.com',
-  },
-  {
-    id: 2,
-    title: 'MyStore',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non, aliquam sunt, illo error officia esse distinctio id at, in a ut magnam? Necessitatibus inventore velit, atque similique natus voluptatum.',
-    features: [
-      { id: 1, name: 'feature one' },
-      { id: 2, name: 'feature two' },
-      { id: 3, name: 'feature three' },
-    ],
-    techStacks: [
-      { id: 1, name: 'React' },
-      { id: 2, name: 'Redux' },
-      { id: 3, name: 'SASS' },
-      { id: 4, name: 'API' },
-      { id: 5, name: 'Context' },
-    ],
-    img: 'https://images.unsplash.com/photo-1592503254549-d83d24a4dfab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80',
-    url: 'google.com',
-    repo: 'google.com',
+    img: img1,
+    url: 'https://watchlistcom.netlify.app/',
+    repo: 'https://github.com/shyamayadav154/Watchlist-Private-',
   },
 ]
 
@@ -79,7 +96,7 @@ export const aboutData = [
     
     ],
     skills: [
-      { id: 1, name: 'Html' },
+      { id: 1, name: 'HTML' },
       { id: 2, name: 'CSS' },
       { id: 3, name: 'SASS' },
       { id: 4, name: 'React' },
@@ -87,6 +104,7 @@ export const aboutData = [
       { id: 6, name: 'GIT' },
       { id: 7, name: 'GitHub' },
       { id: 8, name: 'Responsive Design' },
+      { id: 9, name: 'Webpack' },
 
     ],
   },

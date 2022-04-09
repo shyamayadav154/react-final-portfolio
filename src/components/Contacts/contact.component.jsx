@@ -1,13 +1,13 @@
 import React from 'react'
 import './contact.styles.scss'
-import ContactInfoItem from './contactInfoItem.component'
+import ContactInfoItem from './contactInfoItem.component.jsx'
 import { MdEmail, MdLocalPhone } from 'react-icons/md'
-import ContactForm from './contactForm.componet'
+import ContactForm from './contactForm.componet.jsx'
 
 const Contacts = () => {
   return (
-    <section id='contact' data-scroll-section className='contacts'>
-      <div data-Scroll data-scroll-speed={-1} className='watermark'>
+    <section id='contact'  className='contacts'>
+      <div className='watermark'>
         contact
       </div>
       <div className='head'>
