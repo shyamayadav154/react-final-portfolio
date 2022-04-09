@@ -24,18 +24,17 @@ useEffect(() => {
 }, [])
 
   return (
-    <section   id='home' className='hero'>
-      <div  className='left'>
-       
-          <h1>Hi, my name is Shyamanand.</h1>
-          <h1>
-            I am a <span className='fd'>Frontend Developer</span>
-          </h1>
-       
+    <section id='home' className='hero'>
+      <div className='left'>
+        <h1>Hi, my name is Shyamanand.</h1>
+        <h1>
+          I am a <span className='fd'>Frontend Developer</span>
+        </h1>
+
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
-          cumque, rem iste doloremque numquam quam adipisci sint veritatis modi.
-          Voluptatem.
+          I enjoy solving complex problems. I provide an effective & efficient
+          solution. Nothing brings me more excitement and motivation than
+          building something out of nothing.
         </p>
         <div className='btn-container'>
           <button className='btn ' id='resume'>
@@ -51,10 +50,12 @@ useEffect(() => {
           </button>
         </div>
       </div>
-      <div  className='right'>
+      <div className='right'>
         <img src={webDevIcon} alt='web dev' className='icon' />
       </div>
-      <div className='scroll' style={{display: show?"block":'none'}} >SCROLL DOWN &#8595;</div>
+      <div className='scroll' style={{ display: show ? 'block' : 'none' }}>
+        SCROLL DOWN &#8595;
+      </div>
     </section>
   )
 }

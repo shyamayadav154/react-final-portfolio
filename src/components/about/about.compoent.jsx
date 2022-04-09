@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from 'react'
+import React, { useEffect, useState } from 'react'
 
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -10,50 +10,21 @@ import './about.styles.scss'
 import * as Scroll from 'react-scroll'
 let Element = Scroll.Element
 
-
 const About = () => {
-
-  const [offsetY, setOffsetY] = useState(0)
-  const handleScroll = ()=>{
- 
-    let position = window.pageYOffset
-    setOffsetY(position)}
-    console.log(offsetY);
   
-useEffect(() => {
-  
-window.addEventListener("scroll",handleScroll)
-
-
-  return () => window.removeEventListener("scroll",handleScroll)
-}, [])
-
 
   const { info, desc, skills } = aboutData[0]
 
   return (
     <section className='about'>
-      <div
-       
-        
-        className='watermark'
-      >
-        about
-      </div>
+      <div className='watermark'>about</div>
 
-      <div
-       
-        
-        className='head'
-      >
+      <div className='head'>
         <h2>about</h2>
         <p>{info}</p>
       </div>
 
-      <div
-        
-        className='tail'
-      >
+      <div className='tail'>
         <div className='left'>
           <h3>Get to know me!</h3>
           {desc?.map((item) => (
