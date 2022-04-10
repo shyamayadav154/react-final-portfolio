@@ -5,26 +5,6 @@ import img3 from '../assets/crypto hunter.jpg'
 
 export const projectData = [
   {
-    id: 2,
-    title: 'Comfy Store',
-    desc: 'An e-commerce website for furniture. It demonstrates features such as a shopping cart, payment, and delivery.',
-    features: [
-      { id: 1, name: 'Attractive UI/UX' },
-      { id: 2, name: 'Search,Sort & Filter Product Functionality' },
-      { id: 3, name: 'Add To Cart Functionality' },
-    ],
-    techStacks: [
-      { id: 1, name: 'React' },
-      { id: 2, name: 'Redux' },
-      { id: 3, name: 'SASS' },
-      { id: 4, name: 'API' },
-      { id: 5, name: 'Styled-Components' },
-    ],
-    img: img2,
-    url: 'https://comfy-store-v1.netlify.app/',
-    repo: 'https://github.com/shyamayadav154/comfy-store',
-  },
-  {
     id: 3,
     title: 'Crypto Hunter',
     desc: 'This project is made to track cryptocurrency prices, and add cryptocurrencies to your watchlist to track the price of  particular cryptocurrency',
@@ -42,8 +22,8 @@ export const projectData = [
     techStacks: [
       { id: 1, name: 'React' },
       { id: 2, name: 'Redux Toolkit' },
-      { id: 3, name: 'SASS' },
-      { id: 4, name: 'AXIOS' },
+      { id: 3, name: 'Styled Component' },
+      { id: 4, name: 'Axios' },
       { id: 5, name: 'Material UI' },
       { id: 6, name: 'ChartJS' },
       { id: 7, name: 'Firebase' },
@@ -52,6 +32,27 @@ export const projectData = [
     url: 'https://crypto-hunter-v1.netlify.app/',
     repo: 'https://github.com/shyamayadav154/cyrpto-hunter',
   },
+  {
+    id: 2,
+    title: 'Comfy Store',
+    desc: 'An e-commerce website for furniture. It demonstrates features such as a shopping cart, payment, and delivery.',
+    features: [
+      { id: 1, name: 'Attractive UI/UX' },
+      { id: 2, name: 'Search,Sort & Filter Product Functionality' },
+      { id: 3, name: 'Add To Cart Functionality' },
+    ],
+    techStacks: [
+      { id: 1, name: 'React' },
+      { id: 2, name: 'Redux' },
+      { id: 3, name: 'SASS' },
+      { id: 4, name: 'Axios' },
+      { id: 5, name: 'Styled-Components' },
+    ],
+    img: img2,
+    url: 'https://comfy-store-v1.netlify.app/',
+    repo: 'https://github.com/shyamayadav154/comfy-store',
+  },
+
   {
     id: 1,
     title: 'WatchList.com',
