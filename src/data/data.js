@@ -92,7 +92,7 @@ export const aboutData = [
       {
         id: 2,
         paragraph:
-          ' I also like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to Connect or Follow me on my Linkedin where I post useful content related to Web Development and Programming. ',
+          ' I also like sharing content related to the stuff that I have learned in Web Development so it can help other people in the Dev Community. Feel free to Connect or Follow me on my Linkedin where I post useful content related to Web Development and Programming. ',
       },
     
     ],
