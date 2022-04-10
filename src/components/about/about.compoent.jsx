@@ -8,7 +8,7 @@ import { aboutData } from '../../data/data'
 import './about.styles.scss'
 
 import * as Scroll from 'react-scroll'
-import SectionTitle from '../section-title/sectionTitle.component'
+import SectionTitle from '../section-title/sectionTitle.component.jsx'
 
 
 const About = () => {

@@ -4,7 +4,7 @@ import './project.styes.scss'
 
 import { projectData } from '../../data/data'
 import SingleProject from './singleProject.component.jsx'
-import SectionTitle from '../section-title/sectionTitle.component'
+import SectionTitle from '../section-title/sectionTitle.component.jsx'
 
 
 const Projects = () => {

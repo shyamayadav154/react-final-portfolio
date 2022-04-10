@@ -3,7 +3,7 @@ import './contact.styles.scss'
 import ContactInfoItem from './contactInfoItem.component.jsx'
 import { MdEmail, MdLocalPhone } from 'react-icons/md'
 import ContactForm from './contactForm.componet.jsx'
-import SectionTitle from '../section-title/sectionTitle.component'
+import SectionTitle from '../section-title/sectionTitle.component.jsx'
 
 const Contacts = () => {
   return (

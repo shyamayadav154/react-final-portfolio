@@ -3,7 +3,7 @@ import './hero.styles.scss'
 import webDevIcon from '../../assets/ALL NIGHTER.png';
 import Jump from 'react-reveal/Jump'
 import Fade from 'react-reveal/Slide'
-import Button from '../button/button.compoent';
+import Button from '../button/button.compoent.jsx';
 const Hero = () => {
 
   const [show, setShow] = useState(true)
