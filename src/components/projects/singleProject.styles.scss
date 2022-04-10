@@ -1,10 +1,12 @@
+@import '../../App.scss';
+
 .single-project {
-  @media only screen and (max-width: 768px) {
+  @include for-phone {
     flex-direction: column;
     width: 100%;
     margin: 0 auto;
     background-color: #fff;
-     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   }
   width: 75vw;
   margin: 0 auto;
@@ -14,19 +16,17 @@
   padding: 2rem 0;
   background-color: #fcf8f8;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  
+
   border-radius: 10px;
   justify-content: space-between;
 
   transition: all 0.2s;
   &:hover {
     box-shadow: 3px 6px 10px -6px rgba(0, 0, 0, 0.55);
-  
   }
   .left {
     overflow: hidden;
     border-radius: 5px;
-   
 
     flex: 1;
 
@@ -44,7 +44,7 @@
   .right {
     flex: 1;
 
-    p{
+    p {
       line-height: 1.5;
     }
 

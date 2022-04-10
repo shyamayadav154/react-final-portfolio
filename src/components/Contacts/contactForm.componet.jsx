@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import Button from '../button/button.compoent'
 
 const FormStyle = styled.form`
   width: 100%;
@@ -84,7 +85,7 @@ export default function ContactForm() {
             />
           </label>
         </div>
-        <button type='submit'>SEND</button>
+        <Button type='submit' buttonType='black'>SEND</Button>
       </FormStyle>
     </>
   )

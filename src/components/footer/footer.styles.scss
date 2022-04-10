@@ -1,34 +1,32 @@
+@import '../../App.scss';
 
 
-footer{
-    
-    display: flex;
-    @media only screen and (max-width: 768px) {
-        flex-direction: column;
-        padding: 1rem;
+footer {
+  display: flex;
+  @include for-phone {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  padding: 2rem 6rem;
+  align-items: center;
+  justify-content: space-between;
+  color: #b3b3b3;
+  background: #000;
+
+  .links {
+    ul {
+      list-style: none;
     }
-    padding: 2rem 6rem;
-    align-items: center;
-    justify-content: space-between;
-    color:#B3B3B3;
-    background: #000;
-
-    .links{
-        ul{
-            list-style: none;
-          
-        }
-        a{
-            text-decoration: none;
-           color:#B3B3B3;
-            font-weight: 500;
-            margin: 10px;
-            padding: 10px;
-            &:hover{
-                color:#fff;
-                 transform: scale(1.5);
-            }
-        }
+    a {
+      text-decoration: none;
+      color: #b3b3b3;
+      font-weight: 500;
+      margin: 10px;
+      padding: 10px;
+      &:hover {
+        color: #fff;
+        transform: scale(1.5);
+      }
     }
-
+  }
 }

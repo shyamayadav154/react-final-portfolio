@@ -3,6 +3,7 @@ import './hero.styles.scss'
 import webDevIcon from '../../assets/ALL NIGHTER.png';
 import Jump from 'react-reveal/Jump'
 import Fade from 'react-reveal/Slide'
+import Button from '../button/button.compoent';
 const Hero = () => {
 
   const [show, setShow] = useState(true)
@@ -37,17 +38,18 @@ useEffect(() => {
           building something out of nothing.
         </p>
         <div className='btn-container'>
-          <button className='btn ' id='resume'>
+          <Button buttonType='inverted'>
             <a
               target='_blank'
               href='https://drive.google.com/file/d/1YQ_tmMLgy_w75-C5gdxS91iesjdL6fjV/view?usp=sharing'
             >
               Resume
             </a>
-          </button>
-          <button className='btn'>
+          </Button>
+          
+          <Button >
             <a href=''>get in touch</a>
-          </button>
+          </Button>
         </div>
       </div>
       <div className='right'>

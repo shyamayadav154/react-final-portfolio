@@ -6,15 +6,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+ 
 scroll-behavior: smooth;
+}
+
+
+body{
+scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 
 html {
 
   font-size: 100%;
 
-
+scrollbar-width: none;
 } /*16px*/
 
 body {

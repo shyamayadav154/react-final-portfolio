@@ -8,7 +8,8 @@ import { aboutData } from '../../data/data'
 import './about.styles.scss'
 
 import * as Scroll from 'react-scroll'
-let Element = Scroll.Element
+import SectionTitle from '../section-title/sectionTitle.component'
+
 
 const About = () => {
   
@@ -16,13 +17,10 @@ const About = () => {
   const { info, desc, skills } = aboutData[0]
 
   return (
-    <section className='about'>
-      <div className='watermark'>about</div>
+    <section id='about' className='about'>
+     
 
-      <div className='head'>
-        <h2>about</h2>
-        <p>{info}</p>
-      </div>
+      <SectionTitle title='about' >{info}</SectionTitle>
 
       <div className='tail'>
         <div className='left'>

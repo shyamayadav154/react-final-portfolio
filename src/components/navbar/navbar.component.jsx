@@ -19,13 +19,13 @@ const Navbar = () => {
          
             <ul>
               <li>
-                <ScrollLink
-                  to='about'
+                <a
+                  href='./#about'
                  
                   
                 >
                   about
-                </ScrollLink>
+                </a>
               </li>
               <li>
                 <a  href='./#project'>

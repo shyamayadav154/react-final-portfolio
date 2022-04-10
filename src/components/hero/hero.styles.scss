@@ -1,4 +1,5 @@
-@import 'animate.css';
+
+@import '../../App.scss';
 
 @keyframes scroll-down {
   0% {
@@ -18,17 +19,15 @@
 }
 
 .hero {
- 
-  @media only screen and (max-width: 768px) {
+  @include for-phone {
     width: 90vw;
     padding: 3rem;
     justify-content: center;
-  height: 70vh;
-  .scroll{
-  display: none;
-    left:30%!important; 
-  
-  }
+    height: 70vh;
+    .scroll {
+      display: none;
+      left: 30% !important;
+    }
 
     .right {
       display: none;
@@ -36,7 +35,7 @@
 
     .left {
       z-index: 999;
-      .btn-container{
+      .btn-container {
         display: flex;
         width: 100%;
         //margin-top: 3rem;
@@ -57,63 +56,25 @@
   margin: 0 auto;
   align-items: center;
   .left {
-    p{
+    p {
       max-width: 600px;
       margin-top: 10px;
     }
     .fd {
       color: #991b1b;
     }
-    .btn {
-      background-color: #991b1b;
-      width: 10rem;
-      height: 3rem;
-      font-weight: 400 !important;
-      border-radius: 22px;
+   
 
-      border: none;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      transition: 0.2s ease-in-out;
-      text-transform: uppercase;
-      margin: 1rem;
-      font-weight: 600;
-      a {
-        text-decoration: none;
-        color: white;
-      }
-
-      &:hover {
-         @media only screen and (max-width: 768px) {
-         
-           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-           
-         }
-        color: white;
-        box-shadow: 4px 5px 29px 1px rgba(153, 27, 27, 1);
-        cursor: pointer;
-      }
-    }
-
-    #resume {
-      background-color: #fff;
-      a {
-        color: #000;
-      }
-      border: 1px solid rgba(153, 27, 27, 1);
-      box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
-    }
+   
   }
 
   .right {
-     background-color: #fcf8f8;
-     padding: 1rem;
-     border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #fcf8f8;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     .icon {
       width: 400px;
-     
-     
-      
     }
   }
 

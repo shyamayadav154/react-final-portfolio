@@ -3,17 +3,13 @@ import './contact.styles.scss'
 import ContactInfoItem from './contactInfoItem.component.jsx'
 import { MdEmail, MdLocalPhone } from 'react-icons/md'
 import ContactForm from './contactForm.componet.jsx'
+import SectionTitle from '../section-title/sectionTitle.component'
 
 const Contacts = () => {
   return (
     <section id='contact'  className='contacts'>
-      <div className='watermark'>
-        contact
-      </div>
-      <div className='head'>
-        <h2>contact</h2>
-        <p>get in touch</p>
-      </div>
+    
+    <SectionTitle title='contact' >get in touch</SectionTitle>
 
       <div className='tail'>
       <div className="left">
