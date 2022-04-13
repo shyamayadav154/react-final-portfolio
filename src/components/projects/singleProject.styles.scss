@@ -1,6 +1,9 @@
 @import '../../App.scss';
 
+
+
 .single-project {
+ 
   @include for-phone {
     flex-direction: column;
     width: 100%;
@@ -81,3 +84,5 @@
     }
   }
 }
+
+

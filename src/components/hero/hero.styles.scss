@@ -19,9 +19,14 @@
 }
 
 .hero {
+  min-height: 95vh;
+
+    margin-top: 2rem;
   @include for-phone {
-    width: 90vw;
-    padding: 3rem;
+   
+   
+   
+   
     justify-content: center;
     height: 70vh;
     .scroll {
@@ -34,7 +39,7 @@
     }
 
     .left {
-      z-index: 999;
+     
       .btn-container {
         display: flex;
         width: 100%;
@@ -86,4 +91,19 @@
     font-size: 1.25rem;
     animation: scroll-down 3s infinite;
   }
+}
+
+
+
+@keyframes fade {
+
+ from{opacity: 0; transform: scaleY(0); }
+
+ to{opacity:1; transform: scaleY(1);}
+  
+}
+
+
+.effect-fade-in{
+  animation: fade 0.5s;
 }

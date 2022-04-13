@@ -1,14 +1,14 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import './navbar.styles.scss'
-import Fade from 'react-reveal/Slide'
-import Scroll from 'react-scroll'
-let ScrollLink = Scroll.Link
+
+import { useLocomotiveScroll } from 'react-locomotive-scroll'
 
 const Navbar = () => {
- 
+  const { scroll } = useLocomotiveScroll()
+
   return (
-    <nav >
-      <div className='nav-container'>
+    <nav data-scroll-sticky >
+      <div id='navb' className='nav-container'>
         <div>
           <a href='./' className='brand'>
             SNY
@@ -16,27 +16,28 @@ const Navbar = () => {
         </div>
 
         <div className='links'>
-         
-            <ul>
-              <li>
-                <a
-                  href='./#about'
-                 
-                  
-                >
-                  about
-                </a>
-              </li>
-              <li>
-                <a  href='./#project'>
-                  projects
-                </a>
-              </li>
-              <li onClick={()=>window.scroll(0,1000)}>
-                <a href='./#contact'>contact</a>{' '}
-              </li>
-            </ul>
-      
+          <ul>
+            <li>
+              <a
+                onClick={() => {
+                  scroll.scrollTo('#about')
+                }}
+                href='#'
+              >
+                about
+              </a>
+            </li>
+            <li>
+              <a onClick={() => scroll.scrollTo('#project')} href='#'>
+                projects
+              </a>
+            </li>
+            <li>
+              <a onClick={() => scroll.scrollTo('#contact')} href='#'>
+                contact
+              </a>{' '}
+            </li>
+          </ul>
         </div>
       </div>
     </nav>

@@ -1,11 +1,13 @@
 import React from 'react'
 import './footer.styles.scss'
-import * as Scroll from 'react-scroll'
-let scroll = Scroll.animateScroll
+
+import { useLocomotiveScroll } from 'react-locomotive-scroll'
 
 const Footer = () => {
+  const { scroll } = useLocomotiveScroll()
+
   return (
-    <footer >
+    <footer data-scroll-section>
       <div className='copyright'>
         <p>Copyright &#169; Shyamanand Yadav </p>
       </div>
@@ -20,8 +22,13 @@ const Footer = () => {
           linkedin
         </a>
         <a href='mailto:shyamayadav154@gmail.com'>email</a>
-        <span >
-          <a  href='#home'>top</a>
+        <span
+          onClick={() => {
+            scroll.start()
+            scroll.scrollTo(-100, -100)
+          }}
+        >
+          <a href='#'>top</a>
         </span>
       </div>
     </footer>

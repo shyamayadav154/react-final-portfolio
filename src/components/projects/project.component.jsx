@@ -7,12 +7,13 @@ import SingleProject from './singleProject.component.jsx'
 import SectionTitle from '../section-title/sectionTitle.component'
 
 
+
 const Projects = () => {
    
 
 
   return (
-    <section id='project' className='projects'>
+    <section data-scroll-section id='project' className='projects'>
      
       <SectionTitle title='projects'>
        
@@ -20,7 +21,7 @@ const Projects = () => {
         each project containing its own Source Code and Live Demo
       </SectionTitle>
 
-      <div className='tail'>
+      <div data-scroll data-scroll-speed={1} className='tail'>
         {projectData.map((project) => {
           return <SingleProject key={project.id} project={project} />
         })}

@@ -19,7 +19,7 @@
   .tail {
     padding-top: 1rem;
     display: flex;
-    z-index: 999;
+   
     gap: 6rem;
     @include for-phone {
       flex-direction: column;

@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from 'react'
 
-import Aos from 'aos'
-import 'aos/dist/aos.css'
-import Fade from 'react-reveal/Fade'
-
 import { aboutData } from '../../data/data'
 import './about.styles.scss'
 
-import * as Scroll from 'react-scroll'
 import SectionTitle from '../section-title/sectionTitle.component'
+
 
 
 const About = () => {
@@ -16,13 +12,13 @@ const About = () => {
 
   const { info, desc, skills } = aboutData[0]
 
+
+
   return (
-    <section id='about' className='about'>
-     
+    <section data-scroll-section  id='about' className='about'>
+      <SectionTitle title='about'>{info}</SectionTitle>
 
-      <SectionTitle title='about' >{info}</SectionTitle>
-
-      <div className='tail'>
+      <div data-scroll data-scroll-speed={1} className='tail'>
         <div className='left'>
           <h3>Get to know me!</h3>
           {desc?.map((item) => (

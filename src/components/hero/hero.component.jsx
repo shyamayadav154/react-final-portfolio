@@ -1,32 +1,30 @@
-import React,{useState,useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import './hero.styles.scss'
-import webDevIcon from '../../assets/ALL NIGHTER.png';
+import webDevIcon from '../../assets/ALL NIGHTER.png'
 import Jump from 'react-reveal/Jump'
 import Fade from 'react-reveal/Slide'
-import Button from '../button/button.compoent';
+import Button from '../button/button.compoent'
 const Hero = () => {
-
   const [show, setShow] = useState(true)
   const controlNavbar = () => {
-    if(window.scrollY>100){
+    if (window.scrollY > 100) {
       setShow(false)
-      
-    }else{
+    } else {
       setShow(true)
     }
   }
 
-useEffect(() => {
-  window.addEventListener('scroll', controlNavbar)
+  useEffect(() => {
+    window.addEventListener('scroll', controlNavbar)
 
-  return () => {
-    window.removeEventListener('scroll',controlNavbar)
-  }
-}, [])
+    return () => {
+      window.removeEventListener('scroll', controlNavbar)
+    }
+  }, [])
 
   return (
-    <section id='home' className='hero'>
-      <div className='left'>
+    <section data-scroll-section id='home' className='hero'>
+      <div data-scroll data-scroll-class='effect-fade-in' data-scroll-speed={-1.75} className='left'>
         <h1>Hi, my name is Shyamanand.</h1>
         <h1>
           I am a <span className='fd'>Frontend Developer</span>
@@ -46,8 +44,8 @@ useEffect(() => {
               Resume
             </a>
           </Button>
-          
-          <Button >
+
+          <Button>
             <a href=''>get in touch</a>
           </Button>
         </div>
