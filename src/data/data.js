@@ -75,7 +75,7 @@ export const projectData = [
     ],
     img: img1,
     url: 'https://watchlistcom.netlify.app/',
-    repo: 'https://github.com/shyamayadav154/Watchlist-Private-',
+    repo: 'https://github.com/shyamayadav154/Watchlist',
   },
 ]
 

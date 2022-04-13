@@ -41,14 +41,14 @@ useEffect(() => {
           <Button buttonType='inverted'>
             <a
               target='_blank'
-              href='https://drive.google.com/file/d/1YQ_tmMLgy_w75-C5gdxS91iesjdL6fjV/view?usp=sharing'
+              href='https://drive.google.com/file/d/1m3lRAU-xKP0fb3Fx0HO8lbgbEJJPtwMr/view?usp=sharing'
             >
               Resume
             </a>
           </Button>
-          
-          <Button >
-            <a href=''>get in touch</a>
+
+          <Button>
+            <a href='/#contact'>get in touch</a>
           </Button>
         </div>
       </div>
