@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react'
 import './hero.styles.scss'
 import webDevIcon from '../../assets/ALL NIGHTER.png'
-import Jump from 'react-reveal/Jump'
-import Fade from 'react-reveal/Slide'
+import { useLocomotiveScroll } from 'react-locomotive-scroll'
 import Button from '../button/button.compoent'
+
 const Hero = () => {
+  const { scroll } = useLocomotiveScroll()
+
   const [show, setShow] = useState(true)
+
   const controlNavbar = () => {
+    console.log('working')
     if (window.scrollY > 100) {
       setShow(false)
     } else {
@@ -23,8 +27,12 @@ const Hero = () => {
   }, [])
 
   return (
-    <section data-scroll-section id='home' className='hero'>
-      <div data-scroll data-scroll-class='effect-fade-in' data-scroll-speed={-1.75} className='left'>
+    <section data-scroll-section id='home' className='hero '>
+      <div
+        data-scroll
+        data-scroll-speed={-1.75}
+        className='left effect-fade-in'
+      >
         <h1>Hi, my name is Shyamanand.</h1>
         <h1>
           I am a <span className='fd'>Frontend Developer</span>
@@ -39,21 +47,27 @@ const Hero = () => {
           <Button buttonType='inverted'>
             <a
               target='_blank'
-              href='https://drive.google.com/file/d/1YQ_tmMLgy_w75-C5gdxS91iesjdL6fjV/view?usp=sharing'
+              href='https://drive.google.com/file/d/1m3lRAU-xKP0fb3Fx0HO8lbgbEJJPtwMr/view?usp=sharing'
             >
               Resume
             </a>
           </Button>
 
-          <Button>
-            <a href=''>get in touch</a>
+          <Button onClick={() => scroll.scrollTo('#contact')}>
+            <a href='#'>get in touch</a>
           </Button>
         </div>
       </div>
       <div className='right'>
         <img src={webDevIcon} alt='web dev' className='icon' />
       </div>
-      <div className='scroll' style={{ display: show ? 'block' : 'none' }}>
+      <div
+        data-scroll
+        data-scroll-class='op'
+        data-scroll-offset='top'
+        className='scroll'
+        style={{ display: show ? 'block' : 'none' }}
+      >
         SCROLL DOWN &#8595;
       </div>
     </section>
