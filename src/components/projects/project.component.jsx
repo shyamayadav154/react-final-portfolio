@@ -13,7 +13,7 @@ const Projects = () => {
 
 
   return (
-    <section data-scroll-section id='project' className='projects'>
+    <section data-scroll-section id='projects' className='projects'>
      
       <SectionTitle title='projects'>
        

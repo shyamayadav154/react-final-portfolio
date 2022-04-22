@@ -4,14 +4,44 @@ import webDevIcon from '../../assets/ALL NIGHTER.png'
 import { useLocomotiveScroll } from 'react-locomotive-scroll'
 import Button from '../button/button.compoent'
 import Trails from '../../animation/trails'
+import { motion } from 'framer-motion'
+
+const listVariant = {
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+    transition: {
+      delay: 1,
+      type: 'spring',
+      mass: 0.4,
+      damping: 5,
+      when: 'beforeChildren',
+      staggerChildren: 0.4,
+    },
+  },
+}
+
+const itemVariant = {
+  hidden: {
+    opacity: 0,
+    y: -50,
+    scaleY: 0,
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    scaleY: 1,
+  },
+}
 
 const Hero = () => {
   const { scroll } = useLocomotiveScroll()
- const [open, set] = useState(true)
+
   const [show, setShow] = useState(true)
 
   const controlNavbar = () => {
-    console.log('working')
     if (window.scrollY > 100) {
       setShow(false)
     } else {
@@ -27,50 +57,58 @@ const Hero = () => {
     }
   }, [])
 
- 
-
   return (
     <section data-scroll-section id='home' className='hero '>
-      <div data-scroll data-scroll-speed={-1.75} onClick={() => set(state => !state) }className='left'>
-        
-          <h1>Hi, my name is Shyamanand.</h1>
-          <h1>
-            I am a <span className='fd'>Frontend Developer</span>
-          </h1>
-
-          <p>
-            I enjoy solving complex problems. I provide an effective & efficient
-            solution. Nothing brings me more excitement and motivation than
-            building something out of nothing.
-          </p>
-          <div className='btn-container'>
-            <Button buttonType='inverted'>
-              <a
-                target='_blank'
-                href='https://drive.google.com/file/d/1m3lRAU-xKP0fb3Fx0HO8lbgbEJJPtwMr/view?usp=sharing'
-              >
-                Resume
-              </a>
-            </Button>
-
-            <Button onClick={() => scroll.scrollTo('#contact')}>
-              <a href='#'>get in touch</a>
-            </Button>
-          </div>
-     
-      </div>
-      <div className='right'>
-        <img src={webDevIcon} alt='web dev' className='icon' />
-      </div>
-      <div
+      <motion.div
+        variants={listVariant}
+        initial='hidden'
+        animate='show'
         data-scroll
-        data-scroll-class='op'
-        data-scroll-offset='top'
+        data-scroll-speed={-1.75}
+        className='left'
+      >
+        <motion.h1 variants={itemVariant}>Hi, my name is Shyamanand.</motion.h1>
+        <motion.h1 variants={itemVariant}>
+          I am a <span className='fd'>Frontend Developer</span>
+        </motion.h1>
+
+        <motion.p variants={itemVariant}>
+          I enjoy solving complex problems. I provide an effective & efficient
+          solution. Nothing brings me more excitement and motivation than
+          building something out of nothing.
+        </motion.p>
+        <motion.div variants={itemVariant} className='btn-container'>
+          <Button buttonType='inverted'>
+            <a
+              target='_blank'
+              href='https://drive.google.com/file/d/1m3lRAU-xKP0fb3Fx0HO8lbgbEJJPtwMr/view?usp=sharing'
+            >
+              Resume
+            </a>
+          </Button>
+
+          <Button onClick={() => scroll.scrollTo('#contact')}>
+            <a href='#'>get in touch</a>
+          </Button>
+        </motion.div>
+      </motion.div>
+      <motion.div
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ delay: 3, duration: 0.5 }}
+        className='right'
+      >
+        <img src={webDevIcon} alt='web dev' className='icon' />
+      </motion.div>
+      <motion.div
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ delay: 3, duration: 0.5 }}
         className='scroll'
         style={{ display: show ? 'block' : 'none' }}
       >
         SCROLL DOWN &#8595;
-      </div>
+      </motion.div>
     </section>
   )
 }
