@@ -78,17 +78,19 @@ const Hero = () => {
           building something out of nothing.
         </motion.p>
         <motion.div variants={itemVariant} className='btn-container'>
-          <Button buttonType='inverted'>
+          <Button
+            buttonType='inverted'
+            onClick={() => scroll.scrollTo('#contact')}
+          >
+            <a href='#'>get in touch</a>
+          </Button>
+          <Button>
             <a
               target='_blank'
-              href='https://drive.google.com/file/d/1m3lRAU-xKP0fb3Fx0HO8lbgbEJJPtwMr/view?usp=sharing'
+              href='https://drive.google.com/file/d/13MDBhldojjGgQUTLFp0vsBMle7wwjIuh/view?usp=sharing'
             >
               Resume
             </a>
-          </Button>
-
-          <Button onClick={() => scroll.scrollTo('#contact')}>
-            <a href='#'>get in touch</a>
           </Button>
         </motion.div>
       </motion.div>
@@ -110,7 +112,7 @@ const Hero = () => {
         SCROLL DOWN &#8595;
       </motion.div>
     </section>
-  )
+  );
 }
 
 export default Hero
