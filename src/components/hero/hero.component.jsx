@@ -41,7 +41,7 @@ useEffect(() => {
           <Button buttonType='inverted'>
             <a
               target='_blank'
-              href='https://drive.google.com/file/d/1m3lRAU-xKP0fb3Fx0HO8lbgbEJJPtwMr/view?usp=sharing'
+              href='https://drive.google.com/file/d/1V2vSsioYj_ytGOb-CgQfz9EwpTYB_owN/view?usp=sharing'
             >
               Resume
             </a>
